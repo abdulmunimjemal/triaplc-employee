@@ -23,11 +23,12 @@ Requirements
    cd triaplc-employee
 ```
 
-2. Install the dependencies  
+2. Install the dependencies (If you are not using docker)
    If you don't have yarn, you can install it by running `npm install -g yarn`
 
 ```bash
   yarn install
+  yarn start:dev (for development)
 ```
 
 3. Make sure you have docker installed on your machine.  
@@ -36,6 +37,8 @@ Requirements
 ```bash
     docker-compose up
 ```
+
+and you are good to go.
 
 ## Running the tests
 

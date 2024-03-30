@@ -126,12 +126,12 @@ export class EmployeeService {
       },
       relations: ['subordinates'],
     });
-
-    console.log(`root: ${rootEmployee.name}`);
-
     if (!rootEmployee) {
       throw new BadRequestException('Employee not found');
     }
+
+    console.log(`root: ${rootEmployee.name}`);
+
     // Build and return the entire tree starting from the rootEmployee
     return this.buildTree(rootEmployee);
   }
