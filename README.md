@@ -42,19 +42,19 @@ and you are good to go.
 
 ## API Endpoints
 
-- GET /employees - Get all employees
-- GET /employees/:id - Get an employee by id
-- POST /employees - Create an employee
+- `GET /employees` - Get all employees
+- `GET /employees/:id` - Get an employee by id
+- `POST /employees` - Create an employee
   - Request Body
     ```json
     {
       "name": "CEO",
-      "reportTo": null
+      "reportsTo": null
     }
     ```
-- PATCH /employees/:id - Update an employee
-- **GET /employees/:id/subordinates** - Get all subordinates of an employee and return a tree of it
-- DELETE /employees/:id - Delete an employee
+- `PATCH /employees/:id` - Update an employee
+- **Important** `GET /employees/:id/subordinates` - Get all subordinates of an employee and return a tree of it
+- `DELETE /employees/:id` - Delete an employee
 
 Notiice: The first employee should have `reportTo` as `null`, and the rest should have the `reportTo` as the id of the employee they report to.
 
